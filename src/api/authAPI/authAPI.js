@@ -1,7 +1,7 @@
 import HttpService from '../HttpService';
 import store from '@/store/index.js';
 const AuthHttpService = new HttpService({
-    baseURL: process.env.VUE_AUTH_API_URL
+    baseURL: process.env.VUE_APP_AUTH_API_URL
 });
 var token  = () => store.getters['auth/getToken'];
 export default {
