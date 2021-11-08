@@ -2,7 +2,7 @@ import HttpService from '../HttpService';
 import store from '@/store/index.js';
 var token = store.getters['auth/getToken'];
 const FSOpenHttpService = new HttpService({
-    baseURL: process.env.VUE_APP_FS_OPEN_API_URL || 'http://192.168.0.100:3001/open-api'
+    baseURL: process.env.VUE_APP_FS_OPEN_API_URL
 });
 export default {
     getPreviewVideos(limit, pageNumber){

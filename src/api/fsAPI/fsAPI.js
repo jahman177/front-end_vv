@@ -2,7 +2,7 @@ import HttpService from '../HttpService';
 import store from '@/store/index.js';
 var token  = () => store.getters['auth/getToken'];
 const FSHttpService = new HttpService({
-    baseURL: process.env.VUE_APP_FS_API_URL || 'http://192.168.0.100:3001/api'
+    baseURL: process.env.VUE_APP_FS_API_URL
 });
 export default {
     test() {
