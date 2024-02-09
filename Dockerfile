@@ -11,8 +11,9 @@ WORKDIR /app
 COPY . .
 
 RUN npm install -g pm2
+# RUN npm install -g serve
 RUN npm install
 RUN npm run build
-RUN npm run serve
+# RUN serve -s dist
 
-# CMD ["pm2-runtime", "process.yml"]
+CMD ["pm2-runtime", "process.config.js"]

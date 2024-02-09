@@ -1,3 +1,4 @@
 apps:
-  - script : ./dist/index.js
-    name   : 'auth_app'
+  - script : ./node_modules/@vue/cli-service/bin/vue-cli-service.js
+    name   : 'front_app'
+    args   : serve
